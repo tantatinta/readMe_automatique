@@ -1,4 +1,4 @@
-//this creates the file, follow the md structure. notice the quotations
+
 function generateMarkdown(data) {
   console.log("INSIDE GENERATE MARKDOWN:", data);
   return `
@@ -11,6 +11,7 @@ ${data.description}
 
 
 ## Table of Contents
+
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)

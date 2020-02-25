@@ -4,7 +4,7 @@ var inquirer = require("inquirer");
 var fs = require("fs");
 
 const questions = [
-	//add contribution info and defult and commnd to run the app nswers for 
+	
 	{
 		type: "input",
 		message: "What is your GitHub user name?",
@@ -63,20 +63,9 @@ function writeToFile(fileName, data) {
 	})
 }
 
-
-//to create the json file
 function init() {
 	inquirer.prompt(questions).then(function (answers) {
-		//call write to file
-		// writeToFile()
-		// console.log(answers);
 		api.getUser(answers.username).then(function (response) {
-			// console.log(response);
-			//make a readme
-			// console.log(generateMarkdown({
-			// 	...answers,
-			// 	...response.data
-			// }))
 			writeToFile("leeme.md", generateMarkdown({...answers, ...response.data}))
 
 		}).catch(function(error) {
