@@ -42,14 +42,14 @@ This project is licensed under the Apache License v2.0 license.
 ## Tests
 To test this app, run:
 ```
-
+node index.js
 ```
 
 ## Questions?
 Please contact:
 
 GitHub user tantatinta
-
+monicamgp@gmail.com
 
 
 ![avatar](https://avatars2.githubusercontent.com/u/46512524?v=4)
